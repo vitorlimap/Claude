@@ -1,0 +1,33 @@
+{
+  "geral": {
+    "velocidade": [0.8, 1.3],
+    "tremor_px": 1.0,
+    "chance_overshoot": 0.25,
+    "raio_padrao": 4
+  },
+  "tarefas": [
+    {
+      "nome": "Atualizar painel manha",
+      "ativa": true,
+      "horarios": ["08:30", "11:45"],
+      "variacao_min": 7,
+      "dias": ["seg", "ter", "qua", "qui", "sex"],
+      "chance_pular": 0.0,
+      "cliques": [
+        { "nome": "aba do sistema", "x": 640, "y": 18, "raio": 6, "espera_antes": [0.5, 2.0] },
+        { "nome": "botao atualizar", "x": 1210, "y": 340, "raio": 5, "espera_depois": [1.0, 3.0] }
+      ]
+    },
+    {
+      "nome": "Manter sessao ativa",
+      "ativa": false,
+      "intervalo_min": [12, 25],
+      "variacao_min": 2,
+      "janela": ["08:00", "18:00"],
+      "dias": ["seg", "ter", "qua", "qui", "sex"],
+      "cliques": [
+        { "nome": "area neutra", "x": 900, "y": 500, "raio": 30, "chance_pular": 0.1 }
+      ]
+    }
+  ]
+}
