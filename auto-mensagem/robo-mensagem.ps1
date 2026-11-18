@@ -9,7 +9,8 @@
 param([switch]$Listar)
 
 # ======================= CONFIGURACAO (edite aqui) ==========================
-$TituloJanela = "Claude"   # parte do titulo da janela alvo (sem diferenciar maiusculas)
+$TituloJanela   = "Claude"   # parte do titulo da janela alvo (sem diferenciar maiusculas)
+$ProcessoJanela = "claude"   # so aceita janelas deste programa ("claude" = app do Claude; "" = qualquer um)
 
 $Mensagem = 'manda, crie mais TT, mande as outras tropas farmarem também e inclua oásis no farm mas não nas listas, para não ter risco de nascer animais e eu disparar a lista, e suba os campos da segunda; se não tiver, mande recursos da primeira ou use os recursos do herói. Se ele estiver parado e sem aventura mande ele pra aventura e/ou matar animais em oásis, mas em hipótese nenhuma deixe ele morrer'
 
