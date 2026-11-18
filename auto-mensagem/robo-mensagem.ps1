@@ -16,12 +16,12 @@ $Mensagem = 'manda, crie mais TT, e suba os campos da segunda, se não tiver man
 $MinSegundos     = 180.0   # 3 min
 $MaxSegundos     = 420.0   # 7 min
 $DuracaoHoras    = 6
-$EnviarAoIniciar = $false  # $true = manda a 1a mensagem logo ao iniciar
+$EnviarAoIniciar = $true   # $true = manda a 1a mensagem logo ao iniciar
 
 # Clicar na caixa de texto antes de colar (bom para apps de chat, onde a
 # caixa fica embaixo). Clica no meio da largura, X pixels acima da borda de baixo.
 $ClicarNoCampo          = $true
-$CliqueDistanciaDoFundo = 90
+$CliqueDistanciaDoFundo = 120
 # ============================================================================
 
 Add-Type -AssemblyName System.Windows.Forms
